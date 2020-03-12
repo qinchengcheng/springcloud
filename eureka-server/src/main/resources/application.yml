@@ -6,12 +6,12 @@ eureka:
       defalutZone: http://localhost:7776/eureka/
     fetch-registry: false
     register-with-eureka: false
-security:
-  basic:
-    enabled: true
-  user:
-    name: root
-    password: 123456
 spring:
+  application:
+    name: eureka
+  security:
+    user:
+      name: root
+      password: 123456
   freemarker:
     prefer-file-system-access: false
