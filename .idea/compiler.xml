@@ -6,22 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user-provider" />
         <module name="eureka-server" />
-        <module name="user-consumer" />
+        <module name="config-server" />
+        <module name="user-provider" />
+        <module name="getway-zuul" />
         <module name="common-model" />
+        <module name="user-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common-model" target="1.5" />
+      <module name="config-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="getway-zuul" target="1.8" />
       <module name="user-consumer" target="1.8" />
       <module name="user-provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="getway-zuul" options="-parameters" />
       <module name="user-consumer" options="-parameters" />
       <module name="user-provider" options="-parameters" />
     </option>

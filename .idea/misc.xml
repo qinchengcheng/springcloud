@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/commonmodel/pom.xml" />
         <option value="$PROJECT_DIR$/user-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/common-model/pom.xml" />
+        <option value="$PROJECT_DIR$/getway-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
       </list>
     </option>
   </component>
