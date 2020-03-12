@@ -8,16 +8,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="user-provider" />
         <module name="eureka-server" />
+        <module name="user-consumer" />
+        <module name="common-model" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common-model" target="1.5" />
       <module name="eureka-server" target="1.8" />
+      <module name="user-consumer" target="1.8" />
       <module name="user-provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
+      <module name="user-consumer" options="-parameters" />
       <module name="user-provider" options="-parameters" />
     </option>
   </component>
