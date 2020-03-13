@@ -12,7 +12,7 @@ public class UserService {
     private Logger logger = LoggerFactory.getLogger(UserService.class);
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public  String login(@RequestParam("count") int count) throws  Exception {
-        logger.info("access @ provider 8080 as " + count);
+        logger.info("provider执行 " + count);
         return "用户已验证";
     }
     /*public  boolean login(@RequestBody User user) throws  Exception {
